@@ -9,6 +9,7 @@ public class For {
 		 }
 		 */
 		 //EX:
+		
 		 for(int contador = 0; contador < 10; contador++){
 		 	System.out.println(contador);
 		 }
