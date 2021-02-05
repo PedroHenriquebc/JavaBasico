@@ -1,4 +1,4 @@
-package com.aprendendo.java;
+package com.java.basico;
 
 public class While {
 
