@@ -1,4 +1,4 @@
-package com.aulas.java;
+package aulas.java;
 
 public class Conta {
 	String numero;  // atributo pode ter modificador

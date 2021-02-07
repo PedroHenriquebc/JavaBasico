@@ -1,4 +1,4 @@
-package com.java.basico;
+package java.basico;
 
 import java.util.*;
 

@@ -1,4 +1,4 @@
-package com.java.poo;
+package java.poo;
 
 public class Classes {
 
