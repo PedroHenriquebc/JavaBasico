@@ -1,4 +1,4 @@
-package aulas.exercicio5.banco;
+package aulas.exerc5;
 
 public class Cliente {
 	private String nome;
