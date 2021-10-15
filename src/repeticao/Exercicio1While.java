@@ -18,6 +18,11 @@ public class Exercicio1While {
 		
 		System.out.println("Digite uma nota(-1 para finalizar e ver a média): ");
 		double nota = sc.nextDouble();
+		while(nota == -1) {
+			System.out.println("Digite pelomenos uma nota: ");
+			nota = sc.nextDouble();
+		}
+		
 		while(nota != -1) {
 			if (nota > 10 || nota < 0) {
 				System.out.println("Nota inválida, digite novamente outra nota: ");
