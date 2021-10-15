@@ -25,12 +25,12 @@ public class Exercicio1While {
 		
 		while(nota != -1) {
 			if (nota > 10 || nota < 0) {
-				System.out.println("Nota inválida, digite novamente outra nota: ");
+				System.out.print("Nota inválida! ");
 			} else {
 				soma += nota;
 				cont ++;
 			}
-			System.out.println("Digite uma nota: ");
+			System.out.println("Digite outra nota: ");
 			nota = sc.nextDouble();
 		}
 		media = soma / cont;
