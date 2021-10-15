@@ -1,3 +1,4 @@
+package variaveis;
 
 public class TiposDeVariaveis {
 
