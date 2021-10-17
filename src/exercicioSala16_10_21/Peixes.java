@@ -18,11 +18,18 @@ public class Peixes extends Animal{
 		System.out.println("Glub glub");
 		
 	}
-
+	
+	@Override
+	public void movimentar() {
+		System.out.println("Bate nadadeiras");
+	}
+	
 	@Override
 	public String toString() {
 		return "Peixes [Nome = " + getNome() +", Tipo do Esqueleto = " + getTipoEsqueleto() + ", Sexo = " + getSexo() + "]";
 	}
+
+	
 
 	
 }

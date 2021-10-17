@@ -9,7 +9,17 @@ public class TesteAnimal {
 		a1.setVoar(false);
 		System.out.println(a1);
 		a1.comunicar();
-		a1.voar();
+		a1.movimentar();
+		
+		System.out.println();
+		
+		Aves a2 = new Aves();
+		a2.setNome("Bem-te-vi");
+		a2.setSexo("Macho");
+		a2.setVoar(true);
+		System.out.println(a2);
+		a2.comunicar();
+		a2.movimentar();
 		
 		System.out.println();
 		
@@ -19,6 +29,7 @@ public class TesteAnimal {
 		p1.setTipoEsqueleto("Cartilaginoso");
 		System.out.println(p1);
 		p1.comunicar();
+		p1.movimentar();
 		
 	}
 

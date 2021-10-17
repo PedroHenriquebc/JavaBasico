@@ -5,6 +5,7 @@ public abstract class Animal {
 	private String sexo;
 
 	public abstract void comunicar();
+	public abstract void movimentar();
 
 	public String getNome() {
 		return nome;
