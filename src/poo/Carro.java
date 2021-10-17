@@ -58,4 +58,12 @@ public class Carro implements CarroController{
 		this.velocidade += 5;
 		
 	}
+
+	@Override
+	public String toString() {
+		return "Carro [cor=" + cor + ", ligado=" + ligado + ", marca=" + marca + ", ano=" + ano + ", velocidade="
+				+ velocidade + "]";
+	}
+	
+	
 }
