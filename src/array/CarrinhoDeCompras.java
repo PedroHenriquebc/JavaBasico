@@ -19,12 +19,14 @@ public class CarrinhoDeCompras {
 		String entrada2 = "s";
 
 		while (entrada2.equals("s")) {
-			System.out.println("Tabela de produtos");
+			System.out.println("           	 ~ Tabela de produtos ~");
 			System.out.println();
-			System.out.println("  Produto 		Preço unit.(R$)  	Qtd em Estoque");
-			System.out.println("[0]Arroz  		   " + precos[0] + "                      " + estoque[0]);
-			System.out.println("[1]Feijão  		   " + precos[1] + "                       " + estoque[1]);
-			System.out.println("[2]Óleo  		   " + precos[2] + "                      " + estoque[2]);
+			System.out.println("  Produto 	   Preço unit.(R$)         Qtd em Estoque");
+			for(int i = 0; i < produtos.length; i++ ) {
+				System.out.println("["+i+"]"+ produtos[i] + "             	" 
+						+ precos[i] + "     	         " 
+						+ estoque[i]);
+			}
 			System.out.println();
 			System.out.println("Digite o número do produto que deseja: ");
 			System.out.println();
@@ -67,6 +69,7 @@ public class CarrinhoDeCompras {
 				estoque[2] -= qtdOleo;
 			}
 		}
+			System.out.println();
 			System.out.printf("Total do Carrinho = R$%.2f %n", total);
 			System.out.println("Deseja fazer continuar comprando? (s/n)");
 			entrada2 = sc.next();
@@ -77,14 +80,15 @@ public class CarrinhoDeCompras {
 		System.out.println();
 		System.out.println("Produto 	Preço unit.  	Qtd      Preço Total");
 		for(int i = 0; i < produtos.length; i++ ) {
-			if (precos[i] > 0) {
+			if (estoque[i] < 10) {
 				System.out.println(produtos[i] + "         	" 
 							+ precos[i] + "  	        " 
 							+ (10 - estoque[i]) + "           " 
 							+ ((10 - estoque[i]) * precos[i] ));
-				System.out.println();
-		}	
+				
 		}
+		}
+		System.out.println();
 		System.out.printf("Total do Carrinho = R$%.2f %n", total);
 		sc.close();
 	}
